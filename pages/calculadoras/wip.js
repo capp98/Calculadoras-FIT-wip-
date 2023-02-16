@@ -7,7 +7,6 @@ export default function Calorias() {
       <Head>
         <title>WIP</title>
       </Head>
-      <ResultadoBarra porcentagem="18.7" />
     </>
   );
 }
