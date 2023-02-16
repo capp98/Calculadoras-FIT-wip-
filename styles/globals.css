@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-gray-500;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
+  .personInputForm label {
+    width: 90%;
+    min-width: 100px;
+  }
+
+  .personInputForm label[for='homem'],
+  .personInputForm label[for='mulher'] {
+    width: 45%;
+  }
+
+  .personInputForm input:not([type='radio']) {
+    width: 90%;
+    padding-left: 5px;
+    font-size: 1em;
+  }
+
+  .personInputForm input[type='radio'] {
+    background: #fff;
+  }
+
+  .result h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .result h2 {
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  .result p {
+    margin: 2.5px;
+    padding: 2.5px;
+    border: 1px solid black;
+  }
+
+  /*LAYOUT.JS*/
+  header a {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 2px 5px;
+    transition: box-shadow 200ms ease-out;
+  }
+  header a:hover {
+    background: #fff1;
+    box-shadow: inset 0px -2px 0px #fff;
+    /* border-bottom: 2px solid #fff; */
+  }
+
+  table td,
+  table th {
+    padding: 7px;
+  }
+
+  table tr:nth-child(even) td {
+    background: #d9d9d9;
+  }
+  table tr:nth-child(odd) td {
+    background: #ccc;
+  }
+  table tr td:last-of-type {
+    text-align: center;
+  }
+  table tr th {
+    background: #000;
+    color: #fff;
+  }
+
+  /*BARRA RESULTADO*/
+  .fundo {
+    width: 100%;
+    margin: 40px 0px;
+    height: 40px;
+    background: #f00;
+    position: relative;
+  }
+  .fundo::before {
+  }
+
+  .barra {
+    position: absolute;
+  }
+
+  .fundo > * {
+    position: absolute;
+    height: 100%;
+    background: #f00;
+  }
+
+  .dois {
+    width: 69%;
+    left: 6%;
+    background: #ff0;
+    z-index: 999;
+  }
+
+  .dois::before {
+    position: absolute;
+    content: '2%';
+    font-weight: bold;
+    bottom: 0px;
+  }
+
+  .dois::after {
+    position: absolute;
+    content: '25%';
+    font-weight: bold;
+    bottom: 0px;
+    right: -32px;
+  }
+
+  .tres {
+    left: 18%;
+    width: 24%;
+    background: #8f8;
+    z-index: 999;
+  }
+
+  .tres::after {
+    position: absolute;
+    content: '6%';
+    font-weight: bold;
+    bottom: 0px;
+  }
+  .tres::before {
+    position: absolute;
+    content: 'Essencial';
+    font-weight: bold;
+    bottom: -20px;
+    left: -55%;
+  }
+
+  .quatro {
+    width: 12%;
+    left: 42%;
+    z-index: 999;
+    background: #0f0;
+  }
+
+  .quatro::before {
+    position: absolute;
+    content: '14%';
+    font-weight: bold;
+    bottom: 0px;
+  }
+
+  .quatro::after {
+    position: absolute;
+    content: '18%';
+    font-weight: bold;
+    bottom: 0px;
+    right: -30px;
+  }
+
+  .resultado {
+    background: transparent;
+    z-index: 999;
+  }
+
+  .resultado::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    border-left: 10px solid transparent;
+    right: -9.5px;
+    top: -11px;
+  }
+
+  .Resultado {
+    position: absolute;
+    top: -36px;
+    z-index: 999;
+    right: -10px;
+    top: -32px;
+  }
+}
