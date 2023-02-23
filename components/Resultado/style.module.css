@@ -1,0 +1,4 @@
+.result {
+  /* background: #ff0; */
+  @apply flex flex-col items-stretch;
+}

@@ -22,7 +22,6 @@ export default function Calorias() {
   const handlePescoco = (e) => setPescoco(replaceDot(e.target.value));
   const handleCintura = (e) => setCintura(replaceDot(e.target.value));
 
-  console.log(isHomem);
   useEffect(() => {
     setLoading(false);
   }, []);

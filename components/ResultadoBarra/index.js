@@ -1,5 +1,4 @@
 export default function ResultadoBarra({ porcentagem = 0 }) {
-  console.log(typeof porcentagem);
   return (
     <>
       <div className="fundo">
@@ -11,7 +10,9 @@ export default function ResultadoBarra({ porcentagem = 0 }) {
           className="barra resultado"
           style={{ width: `${porcentagem * 3}%` }}
         >
-          <div className="Resultado">{porcentagem.toFixed(1)}%</div>
+          <div className="Resultado">
+            {porcentagem < 0 ? 0 : porcentagem.toFixed(1)}%
+          </div>
         </div>
       </div>
     </>
