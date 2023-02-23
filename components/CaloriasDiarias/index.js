@@ -1,7 +1,10 @@
 export default function CaloriasDiarias({ bmr }) {
   return (
-    <>
-      <h1>Calórias diárias - {bmr.toPrecision(4)} </h1>
+    <div className="quadro">
+      <h2>Calorias diárias </h2>
+      <p>
+        <span className="highlight">{bmr.toPrecision(4)} Kcal</span>
+      </p>
       <table>
         <thead>
           <tr>
@@ -41,6 +44,6 @@ export default function CaloriasDiarias({ bmr }) {
           </tr>
         </tbody>
       </table>
-    </>
+    </div>
   );
 }

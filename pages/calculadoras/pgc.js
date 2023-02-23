@@ -33,7 +33,7 @@ export default function Calorias() {
       </Head>
       {!loading ? (
         <>
-          <main className="flex">
+          <main>
             <div className="flex flex-col personInputForm">
               <div onChange={handleRadio} className="flex">
                 <label htmlFor="homem">

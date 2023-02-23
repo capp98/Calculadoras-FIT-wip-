@@ -47,7 +47,6 @@ export default function Resultado({
     <div className={styles.result}>
       {!!peso && <AguaDiaria aguaDiaria={aguaDiaria} />}
 
-      <h1>Porcentagem de gordura corporal (PGC)</h1>
       {!!idade && !!altura && !!peso && (
         <IMC {...{ imc, bfpimc, mmimc, mgimc }} />
       )}
