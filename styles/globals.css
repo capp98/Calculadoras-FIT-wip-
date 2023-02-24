@@ -108,13 +108,19 @@
   }
 
   table tr:nth-child(even) td {
-    background: #d9d9d9;
+    /* background: #d9d9d9; */
   }
   table tr:nth-child(odd) td {
-    background: #ccc;
+    /* background: #ccc; */
   }
   table tr td:last-of-type {
     text-align: center;
+  }
+  table thead tr:last-of-type {
+    border-bottom: 2px solid #fff;
+  }
+  table tbody tr:not(:last-of-type) {
+    border-bottom: 1px solid #fff;
   }
 
   /*BARRA RESULTADO*/
